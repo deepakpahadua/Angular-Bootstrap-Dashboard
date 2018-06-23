@@ -22,6 +22,13 @@ function ($rootScope, $scope, $state, $location,$window, loginService, Flash,app
 
       vm.userdata = logindata;
 
+vm.logout = function()
+      {
+        console.log(' i am in logout ');
+        window.localStorage.clear();
+        $state.go('login');
+      }
+
     //avalilable themes
     vm.themes = [
         {
