@@ -76,10 +76,10 @@ function ($rootScope, $scope, $state, $location, loginService, Flash, apiService
             console.log('i am in register')
             if (vm.setUser.confirmPassword == vm.setUser.Password){
                 loginService.registerUser(vm.setUser).then(function (response) {
-                    if (response.message == 'success')
+                    
                 console.log('after post>>',response);
                 //if (response.length > 0)
-                   $state.go('app');
+                    vm.signIn = true;
                 //else
                 //    Flash.create('danger', 'Invalid Credentials', 'large-text');
             });
