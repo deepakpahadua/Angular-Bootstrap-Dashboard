@@ -13,7 +13,7 @@ var appConfig = {
     title: "Corporate Directory",
     lang: "en",
     dateFormat: "mm/dd/yy",
-    apiBase: 'http://localhost:3000/v1/api/admin/',
+    apiBase: 'http://54.202.121.128:3000/v1/api/admin/',
     theme: 'skin-purple',
     layout:""
 };
